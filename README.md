@@ -33,3 +33,11 @@ python SASSI_converter.py YOURMODELNAME
 ```
 
 
+---
+[UCD CompGeoMech](http://sokocalo.engr.ucdavis.edu/~jeremic/)
+
+Created by: Hexiang Wang
+
+Request for adding features on hexwang@ucdavis.edu
+
+
