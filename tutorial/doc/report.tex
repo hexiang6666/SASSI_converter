@@ -1,0 +1,58 @@
+\documentclass{article}
+
+% \setlength\parindent{0pt}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{cleveref}
+\usepackage[comma,authoryear]{natbib}
+\usepackage[section]{placeins}
+
+\usepackage[affil-it]{authblk} 
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\usepackage[font=small]{caption}
+
+
+\begin{document}
+
+\title{Documentation of SASSI converter}
+\author{Hexiang Wang}
+\maketitle
+
+
+\begin{itemize}
+	\item SASSI convertor includes \textbf{ESSI\_preprocessor.sh} and \textbf{SASSI\_converter.py}. The function of \textbf{ESSI\_preprocessor} is to selectively parse the information in ESSI geoemtry (\textbf{YOURMODELNAME\_geometry.fei}) and load file (\textbf{YOURMODELNAME\_load.fei}) into pure numbers file (no strings any more). The function of \textbf{SASSI\_converter.py} is a driving software to launch the programe and read these pure numbers file and generate SASSI geometrical input files according to the format specified by the usr manual of SASSI. 
+
+	\item Important details used for converting: 
+
+		\begin{itemize}
+
+			\item SASSI usr manual Page 205: 5-64 about the format of node
+
+			\item SASSI usr manual Page 219: 5-60 about the format of 8 node solid brick
+		\end{itemize}
+
+	\item Currently only \textbf{Node} and \textbf{8 node brick element} is supported to convert. If new type of elements want to get converted, \textbf{ESSI\_preprocessor.sh} have to be modified and extract relavant elemental information and write them into pure numbers file.
+
+	\item A intermediate file \textbf{ElementTypeTag} is used to record the element type information contained in the geometry model. Currently only \textbf{8 node brick element} and \textbf{27 node brick element} are checked and recorded. If the ElementTypeTag equals to 1, means this type of element exists in the ESSI model. If it equals to 0, means does not exists. This tag file can be very helpful in the future if we have many types of elements needed to be converted. 
+
+
+	\item For boundary condition in \textbf{YOURMODELNAME\_load.fei}, we do the following substitution to get corresponding pure numbers file. 
+
+		\begin{itemize}		
+		\item ux $\rightarrow$ 1 
+		\item uy $\rightarrow$ 2
+		\item uz $\rightarrow$ 3
+		\item rx $\rightarrow$ 4 
+		\item ry $\rightarrow$ 5
+		\item rz $\rightarrow$ 6
+		\end{itemize}
+
+\end{itemize}
+
+
+\end{document}
