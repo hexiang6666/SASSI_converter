@@ -14,7 +14,7 @@ SASSI converter can transfer [REAL ESSI](http://sokocalo.engr.ucdavis.edu/~jerem
 https://github.com/hexiang6666/SASSI_converter.git
 ```
 
-2) Copy or make links of [ESSI_preprocessor.sh] and [SASSI_converter.py] from Source code directory to current running directory.
+2) Copy or make links of **ESSI_preprocessor.sh** and **SASSI_converter.py** from Source code directory to your current running directory.
 
 
 3) make copied files executable
