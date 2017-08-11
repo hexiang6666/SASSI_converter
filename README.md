@@ -25,7 +25,7 @@ sudo chmod 777 ./ESSI_preprocessor.sh ./SASSI_converter.py
 
 ### Running
 
-In order to run ###SASSI_convertor, you need to have RealESSI geometry and load files prepared (i.e. YOURMODELNAME_geometry.fei and YOURMODELNAME_load.fei). In order to transfer these files, simply run:
+In order to run [SASSI_convertor](https://github.com/hexiang6666/SASSI_converter/), you need to have RealESSI geometry and load files prepared (i.e. YOURMODELNAME_geometry.fei and YOURMODELNAME_load.fei). In order to transfer these files, simply run:
 
 
 ```bash
