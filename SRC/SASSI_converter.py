@@ -176,7 +176,6 @@ for x5 in xrange(0,eight_solid_element.shape[0]):
 
 	f.write("%s%s%s%s%s%s%s%s%s    %d    %d%s\n" %(ID, nodal_ID_1, nodal_ID_2, nodal_ID_3, nodal_ID_4, nodal_ID_5, nodal_ID_6, nodal_ID_7,nodal_ID_8, integration_order, element_type, material_type)) 
 
-
 bash_calling="rm -rf ./*.temp"
 
 subprocess.call(bash_calling, shell=True)

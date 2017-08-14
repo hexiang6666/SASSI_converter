@@ -1,0 +1,88 @@
+model name "SMR_model2_8node_no_contact"; 
+
+new loading stage "self_weight"; 
+
+
+
+
+add material # 1 type linear_elastic_isotropic_3d mass_density = 2300*kg/m^3 elastic_modulus = 3e10*N/m^2 poisson_ratio = 0.20; 
+
+
+add material # 2 type linear_elastic_isotropic_3d mass_density = 2000*kg/m^3 elastic_modulus = 1.25e9*N/m^2 poisson_ratio = 0.25; 
+
+add material # 3 type linear_elastic_isotropic_3d mass_density = 2000*kg/m^3 elastic_modulus = 1.25e9*N/m^2 poisson_ratio = 0.25; 
+
+add material # 4 type linear_elastic_isotropic_3d mass_density = 2000*kg/m^3 elastic_modulus = 1.25e9*N/m^2 poisson_ratio = 0.25; 
+
+add material # 5 type linear_elastic_isotropic_3d mass_density = 2000*kg/m^3 elastic_modulus = 1.25e9*N/m^2 poisson_ratio = 0.25; 
+
+add material # 6 type linear_elastic_isotropic_3d mass_density = 2000*kg/m^3 elastic_modulus = 1.25e9*N/m^2 poisson_ratio = 0.25; 
+
+
+ Gamma = 0.7; 
+
+ Beta = 0.25*(0.5+Gamma)*(0.5+Gamma); 
+
+ T1 = 2*s; 
+ T2 = 0.2*s; 
+ w1 = 2*pi/T1; 
+ w2 = 2*pi/T2; 
+
+ xi_1 = 0.05; 
+ rayl_1_a1 = 2*xi_1/(w1+w2); 
+ rayl_1_a0 = rayl_1_a1*w1*w2; 
+
+ xi_2 = 0.15; 
+ rayl_2_a1 = 2*xi_2/(w1+w2); 
+ rayl_2_a0 = rayl_2_a1*w1*w2; 
+
+ xi_3 = 0.2; 
+ rayl_3_a1 = 2*xi_3/(w1+w2); 
+ rayl_3_a0 = rayl_3_a1*w1*w2; 
+
+ xi_4 = 0.2; 
+ rayl_4_a1 = 2*xi_4/(w1+w2); 
+ rayl_4_a0 = rayl_4_a1*w1*w2; 
+
+ xi_5 = 0.40; 
+ rayl_5_a1 = 2*xi_5/(w1+w2); 
+ rayl_5_a0 = rayl_5_a1*w1*w2; 
+
+ xi_6 = 0.60; 
+ rayl_6_a1 = 2*xi_6/(w1+w2); 
+ rayl_6_a0 = rayl_6_a1*w1*w2; 
+
+
+
+add damping # 1 type Rayleigh with a0 = rayl_1_a0 a1 = rayl_1_a1 stiffness_to_use = Initial_Stiffness; 
+add damping # 2 type Rayleigh with a0 = rayl_2_a0 a1 = rayl_2_a1 stiffness_to_use = Initial_Stiffness; 
+add damping # 3 type Rayleigh with a0 = rayl_3_a0 a1 = rayl_3_a1 stiffness_to_use = Initial_Stiffness; 
+add damping # 4 type Rayleigh with a0 = rayl_4_a0 a1 = rayl_4_a1 stiffness_to_use = Initial_Stiffness; 
+add damping # 5 type Rayleigh with a0 = rayl_5_a0 a1 = rayl_5_a1 stiffness_to_use = Initial_Stiffness; 
+add damping # 6 type Rayleigh with a0 = rayl_6_a0 a1 = rayl_6_a1 stiffness_to_use = Initial_Stiffness; 
+
+
+
+
+
+add acceleration field # 1 ax = 0*g ay = 0*g az = -1*g ; 
+
+
+include "SMR_model2_geometry.fei"; 
+
+include "SMR_model2_load.fei"; 
+
+add load # 1 to all elements type self_weight use acceleration field # 1; 
+
+define solver Parallel; 
+
+define load factor increment 0.5; 
+
+define convergence test Norm_Unbalance tolerance = 500 maximum_iterations = 150 verbose_level = 4; 
+
+define algorithm NewtonLineSearch; 
+
+
+simulate 2 steps using static algorithm; 
+
+ bye; 
