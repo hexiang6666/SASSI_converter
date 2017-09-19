@@ -1,0 +1,11 @@
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
