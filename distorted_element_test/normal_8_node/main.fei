@@ -4,7 +4,7 @@ model name "vm";
 
 rho =2000*kg/m^3;
 nu = 0.25;
-E = 1.25e9*N/m^2;
+E = 1.25e8*N/m^2;
 G=5e8*N/m^2;
 
 // 
@@ -25,15 +25,22 @@ yield_stress=6e4*N/m^2;
 // eta = 6*sin(phirad)/(3-sin(phirad));
 
 // Define the material:
-add material # 1 type VonMisesArmstrongFrederick
-    mass_density = rho
-    elastic_modulus = E
-    poisson_ratio = nu
-    von_mises_radius = yield_stress
-    armstrong_frederick_ha = E
-    armstrong_frederick_cr = cr 
-    isotropic_hardening_rate = 0*Pa
-    ;
+// add material # 1 type VonMisesArmstrongFrederick
+//     mass_density = rho
+//     elastic_modulus = E
+//     poisson_ratio = nu
+//     von_mises_radius = yield_stress
+//     armstrong_frederick_ha = E
+//     armstrong_frederick_cr = cr 
+//     isotropic_hardening_rate = 0*Pa
+//     ;
+
+// add material # <.> type linear_elastic_isotropic_3d mass_density = <M/L^3> elastic_modulus = <F/L^2> poisson_ratio = <.>;
+add material # 1 type linear_elastic_isotropic_3d  mass_density = rho  elastic_modulus = E  poisson_ratio = nu ;
+
+
+
+
 // define the node:
 add node # 1 at (0*m,0*m,1*m)  with 3 dofs;
 add node # 2 at (1*m,0*m,1*m)  with 3 dofs;
@@ -98,6 +105,8 @@ Nstep = 10;
 define load factor increment 1/Nstep;
 simulate Nstep steps using static algorithm;
 
+
+
 new loading stage "2shearing";
 //fix the bottom totally
 fix node # 7 dofs all;
@@ -111,10 +120,10 @@ fix node # 4 dofs uy uz ;
 
 
 
-add load # 101 to node # 1 type linear Fx =  400 * N;
-add load # 102 to node # 2 type linear Fx =  400 * N;
-add load # 103 to node # 3 type linear Fx =  400 * N;
-add load # 104 to node # 4 type linear Fx =  400 * N;
+add load # 101 to node # 1 type linear Fx =  400000*N;
+add load # 102 to node # 2 type linear Fx =  400000*N;
+add load # 103 to node # 3 type linear Fx =  400000*N;
+add load # 104 to node # 4 type linear Fx =  400000*N;
 
 
     
@@ -132,14 +141,21 @@ define NDMaterial constitutive integration algorithm Backward_Euler
     maximum_iterations = 100;
 Nsteps = 100;
 // define static integrator displacement_control using node # <.> dof DOFTYPE increment <length>;
-define static integrator displacement_control using node # 1 dof ux increment 1E-3*m ;
+// define static integrator displacement_control using node # 1 dof ux increment 1E-3*m ;
+
+define load factor increment 1/Nsteps;
 //define load factor increment 1/Nsteps;
 simulate Nsteps steps using static algorithm;
+
+
+
+
+
 new loading stage "3unloading";
-add load # 105 to node # 1 type linear Fx =  -400 * N;
-add load # 106 to node # 2 type linear Fx =  -400 * N;
-add load # 107 to node # 3 type linear Fx =  -400 * N;
-add load # 108 to node # 4 type linear Fx =  -400 * N;
+add load # 105 to node # 1 type linear Fx =  -400000*N;
+add load # 106 to node # 2 type linear Fx =  -400000*N;
+add load # 107 to node # 3 type linear Fx =  -400000*N;
+add load # 108 to node # 4 type linear Fx =  -400000*N;
 define solver ProfileSPD;
 //define algorithm With_no_convergence_check ;
 define convergence test Norm_Displacement_Increment
@@ -153,17 +169,24 @@ define NDMaterial constitutive integration algorithm Backward_Euler
     stress_relative_tolerance =  1E-7
     maximum_iterations = 100;
 Nsteps = 100;
+
 // define static integrator displacement_control using node # <.> dof DOFTYPE increment <length>;
-define static integrator displacement_control using node # 1 dof ux increment -1E-3*m ;
+// define static integrator displacement_control using node # 1 dof ux increment -1E-3*m ;
+
+define load factor increment 1/Nsteps;
+
 //define load factor increment 1/Nsteps;
 simulate 2*Nsteps steps using static algorithm;
 
 
+
+
+
 new loading stage "4reloading" ;
-add load # 115 to node # 1 type linear Fx =  400 * N;
-add load # 116 to node # 2 type linear Fx =  400 * N;
-add load # 117 to node # 3 type linear Fx =  400 * N;
-add load # 118 to node # 4 type linear Fx =  400 * N;
+add load # 115 to node # 1 type linear Fx =  400000*N;
+add load # 116 to node # 2 type linear Fx =  400000*N;
+add load # 117 to node # 3 type linear Fx =  400000*N;
+add load # 118 to node # 4 type linear Fx =  400000*N;
 define solver ProfileSPD;
 //define algorithm With_no_convergence_check ;
 define convergence test Norm_Displacement_Increment
@@ -177,33 +200,15 @@ define NDMaterial constitutive integration algorithm Backward_Euler
     stress_relative_tolerance =  1E-7
     maximum_iterations = 100;
 Nsteps = 100;
+
+
 // define static integrator displacement_control using node # <.> dof DOFTYPE increment <length>;
-define static integrator displacement_control using node # 1 dof ux increment 1E-3*m ;
-//define load factor increment 1/Nsteps;
+// define static integrator displacement_control using node # 1 dof ux increment 1E-3*m ;
+
+
+define load factor increment 1/Nsteps;
 simulate 2*Nsteps steps using static algorithm;
 
 
 bye;  
 
-
-
-
-//mot = 1;
-//dt = 1E2*s ; 
-//while (mot < 5 ) {
-    //add imposed motion # mot+100 to node # mot dof ux 
-        //time_step =  dt
-        //displacement_scale_unit =  0.3*m 
-        //displacement_file =  "path.txt" 
-        //velocity_scale_unit =  0*m/s 
-        //velocity_file =  "path.txt" 
-        //acceleration_scale_unit =  0.0*m/s^2 
-        //acceleration_file = "path.txt";
-    //mot = mot + 1;
-    //};
-
-    //
-//define dynamic integrator Newmark with 
-    //gamma = 0.5 
-    //beta = 0.25;
-//    
