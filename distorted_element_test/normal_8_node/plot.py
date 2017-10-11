@@ -11,12 +11,12 @@ def h52stressStrain(h5in_filename):
 	strain = outputs_all[4  , 1:-1]
 	return [stress, strain]
 
-[stress_load,   strain_load]   = h52stressStrain("vm_2shearing.h5.feioutput")
-[stress_unload, strain_unload] = h52stressStrain("vm_3unloading.h5.feioutput")
-[stress_reload, strain_reload] = h52stressStrain("vm_4reloading.h5.feioutput")
+# [stress_load,   strain_load]   = h52stressStrain("vm_2shearing.h5.feioutput")
+# [stress_unload, strain_unload] = h52stressStrain("vm_3unloading.h5.feioutput")
+# [stress_reload, strain_reload] = h52stressStrain("vm_4reloading.h5.feioutput")
 
-stress  = np.concatenate((stress_load,stress_unload,stress_reload))
-strain  = np.concatenate((strain_load,strain_unload,strain_reload))
+# stress  = np.concatenate((stress_load,stress_unload,stress_reload))
+# strain  = np.concatenate((strain_load,strain_unload,strain_reload))
 
 
 
@@ -30,58 +30,102 @@ def h52Dis(h5in_filename,initial_num):
 
 
 
-[dis_confine, time_step_confine] = h52Dis("vm_1Confine.h5.feioutput",0)
+# [dis_confine, time_step_confine] = h52Dis("vm_1Confine.h5.feioutput",0)
 
-[dis_load, time_step_load] = h52Dis("vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
+# [dis_load, time_step_load] = h52Dis("vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
 
-[dis_unload, time_step_unload] = h52Dis("vm_3unloading.h5.feioutput", time_step_load[-1]+1)
+# [dis_unload, time_step_unload] = h52Dis("vm_3unloading.h5.feioutput", time_step_load[-1]+1)
 
-[dis_reload, time_step_reload] = h52Dis("vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
+# [dis_reload, time_step_reload] = h52Dis("vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
 
-dis_8_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
+############ For separately plot confinement loading and simple shearing loading #########################
 
-time_step_8_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
+[dis_load, time_step_load] = h52Dis("vm_2shearing.h5.feioutput", 0); 
 
+dis_8_node =  dis_load ; #dis_confine; 
 
+time_step_8_node = time_step_load;      #time_step_confine; 
 
-[dis_confine, time_step_confine] = h52Dis("../distorted_7_node/vm_1Confine.h5.feioutput",0)
+##########################################################################################################
 
-[dis_load, time_step_load] = h52Dis("../distorted_7_node/vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
+# dis_8_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
 
-[dis_unload, time_step_unload] = h52Dis("../distorted_7_node/vm_3unloading.h5.feioutput", time_step_load[-1]+1)
-
-[dis_reload, time_step_reload] = h52Dis("../distorted_7_node/vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
-
-dis_7_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
-
-time_step_7_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
+# time_step_8_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
 
 
 
-[dis_confine, time_step_confine] = h52Dis("../distorted_6_node/vm_1Confine.h5.feioutput",0)
 
-[dis_load, time_step_load] = h52Dis("../distorted_6_node/vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
+# [dis_confine, time_step_confine] = h52Dis("../distorted_7_node/vm_1Confine.h5.feioutput",0)
 
-[dis_unload, time_step_unload] = h52Dis("../distorted_6_node/vm_3unloading.h5.feioutput", time_step_load[-1]+1)
+# [dis_load, time_step_load] = h52Dis("../distorted_7_node/vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
 
-[dis_reload, time_step_reload] = h52Dis("../distorted_6_node/vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
+# [dis_unload, time_step_unload] = h52Dis("../distorted_7_node/vm_3unloading.h5.feioutput", time_step_load[-1]+1)
 
-dis_6_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
+# [dis_reload, time_step_reload] = h52Dis("../distorted_7_node/vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
 
-time_step_6_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
+############ For separately plot confinement loading and simple shearing loading #########################
+
+[dis_load, time_step_load] = h52Dis("../distorted_7_node/vm_2shearing.h5.feioutput", 0); 
+
+dis_7_node = dis_load; 
+
+time_step_7_node = time_step_load; 
+
+##########################################################################################################
+
+# dis_7_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
+
+# time_step_7_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
 
 
-[dis_confine, time_step_confine] = h52Dis("../distorted_5_node/vm_1Confine.h5.feioutput",0)
 
-[dis_load, time_step_load] = h52Dis("../distorted_5_node/vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
+# [dis_confine, time_step_confine] = h52Dis("../distorted_6_node/vm_1Confine.h5.feioutput",0)
 
-[dis_unload, time_step_unload] = h52Dis("../distorted_5_node/vm_3unloading.h5.feioutput", time_step_load[-1]+1)
+# [dis_load, time_step_load] = h52Dis("../distorted_6_node/vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
 
-[dis_reload, time_step_reload] = h52Dis("../distorted_5_node/vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
+# [dis_unload, time_step_unload] = h52Dis("../distorted_6_node/vm_3unloading.h5.feioutput", time_step_load[-1]+1)
 
-dis_5_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
+# [dis_reload, time_step_reload] = h52Dis("../distorted_6_node/vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
 
-time_step_5_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
+############ For separately plot confinement loading and simple shearing loading #########################
+
+[dis_load, time_step_load] = h52Dis("../distorted_6_node/vm_2shearing.h5.feioutput", 0)
+
+dis_6_node = dis_load; 
+
+time_step_6_node = time_step_load; 
+
+##########################################################################################################
+
+# dis_6_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
+
+# time_step_6_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
+
+
+# [dis_confine, time_step_confine] = h52Dis("../distorted_5_node/vm_1Confine.h5.feioutput",0)
+
+# [dis_load, time_step_load] = h52Dis("../distorted_5_node/vm_2shearing.h5.feioutput", time_step_confine[-1]+1)
+
+# [dis_unload, time_step_unload] = h52Dis("../distorted_5_node/vm_3unloading.h5.feioutput", time_step_load[-1]+1)
+
+# [dis_reload, time_step_reload] = h52Dis("../distorted_5_node/vm_4reloading.h5.feioutput", time_step_unload[-1]+1)
+
+############ For separately plot confinement loading and simple shearing loading #########################
+
+[dis_load, time_step_load] = h52Dis("../distorted_5_node/vm_2shearing.h5.feioutput", 0)
+
+dis_5_node = dis_load; 
+
+time_step_5_node = time_step_load; 
+
+##########################################################################################################
+
+# dis_5_node = np.concatenate((dis_confine, dis_load, dis_unload, dis_reload))
+
+# time_step_5_node = np.concatenate((time_step_confine,time_step_load,time_step_unload,time_step_reload))
+
+
+
 
 # print dis, time_step
 
@@ -100,7 +144,16 @@ if len(dis_8_node) == len(time_step_8_node) :
 	plt.xlabel('Time step', fontname='Arial', fontsize=42, labelpad=10) #fontweight='bold')
 	plt.ylabel('$Displacement$ [m]', fontname='Arial', fontsize=42)   #fontweight='bold')
 	plt.axis('on')
+
+	axes=plt.gca()
+
+	axes.set_ylim([-0.05,0.08])
+	
 	plt.tick_params(axis='both', which='major', labelsize=36)
+	
+	plt.yticks(np.arange(-0.04, 0.08, 0.02))
+	# plt.locator_params(axis='y', numticks=12)
+
 	plt.show()
 
 

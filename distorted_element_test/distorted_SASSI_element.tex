@@ -26,7 +26,7 @@
 
 \section{Introduction}\label{sec: introduction}
 
-SASSI, a System for Analysis of Soil-Structure Interaction developed by \citet{SASSIUsrManual}, consists of a number of interrelated computer program modules which can be used to solve a wide range of dynamic soil-structure interaction problems in two or three dimensions.
+SASSI, a System for Analysis of Soil-Structure Interaction developed by \citet{Ostadan2007b}, consists of a number of interrelated computer program modules which can be used to solve a wide range of dynamic soil-structure interaction problems in two or three dimensions.
 %
 A lot of geometric finite element models has been developed based on SASSI. 
 
@@ -66,18 +66,20 @@ Rigorous numerical tests have been done to confirm the feasibility and validity 
 
 \subsection{Test procedure}
 
-The test procedure is following:
+With reference to the ``patch test'' put forward by \cite{local-143}, the test procedure is following:
 
 \begin{itemize}
-\item A standard solution is given by simple confine-shearing-unloading-reloading simulation on a single normal 8 node brick element.
+\item 
+A standard solution is given by testing two different loading modes on a single normal 8 node brick element:
 %
-The cyclic shearing force is applied on four nodes of top layer, while four nodes on bottom layer are totally fixed.
+(1) Pure confinment loading, where same pressure are applied on three different directions. 
 %
-Simple elastic material is adopted here with Young's modulus $E$ taken as $125\ MPa$ and Poisson's ratio $\mu$ as $0.25$. 
+(2) Simple sheaing, where shearing force is applied on four nodes of top layer, while four nodes on bottom layer are totally fixed. 
+%
+Simple elastic material is adopted here with Young's modulus $E$ as $125\ MPa$ and Poisson's ratio $\mu$ as $0.25$. 
 %
 The setup of standard test is shown in figure \ref{Fig:setup of standard 8-node element}. 
 %
-% Figure \ref{Fig:standard stress strain} gives standard stress-strain .
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.6\textwidth]{images/standard_8_node_element.pdf}
@@ -138,26 +140,39 @@ And figure \ref{Fig:geometric configuration of numerical test for 5-node distort
 
 All the input files of numerical tests are placed at the \href{http://cml08.engr.ucdavis.edu/for_professor/distorted_element_test/}{website}. 
 %
-The comparison result is shown in figure \ref{Fig: comparison result of distorted elements}. 
+The comparison of displacement response for confinement loading is shown in figure \ref{Fig: confinement comparison result}. 
 %
-It can be seen that the simulation results with these types of distorted element are close to result of standard 8 node brick element. 
+Figure \ref{Fig: shearing comparison result} demonstrates the test results of simple shearing loading. 
+%
+It can be seen that the simulation results of these types of distorted element are close to result of standard 8 node brick element. 
 %
 The line of 6 node distorted element is almost overlap with the line of standard test.
 %
 Distorted 7-node element and 5-node element experience certain decrease of accuracy. 
 %
-In this particular test, the maximum error happened at the beginning of reloading.
+The main error reflects on the decrease of stiffness. 
 %
-The solutions of distorted 7-node element and 5-node element is 17\% higher than that of standard 8-node element.     
+Both bulk modulus and shear modulus of 7-node element and 5-node element are around 7\% lower than the standard 8-node element.    
+%
+Therefore, the simulation error of displacement response is proportional to the magnitude of external force. Larger force leads to bigger simulation error.  
+
+% In this particular test, the maximum error happened at the beginning of reloading.
+% %
+% The solutions of distorted 7-node element and 5-node element is 17\% higher than that of standard 8-node element.     
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.8\textwidth]{images/comparison_result_annotation.pdf}
+\includegraphics[width=0.8\textwidth]{images/confinement_comparison.pdf}
 \end{center}
-\caption{\label{Fig: comparison result of distorted elements} Comparison results of three types of distorted elements}
+\caption{\label{Fig: confinement comparison result} Comparison of displacement response under confinement loading}
 \end{figure}
 
-
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/shearing_comparison.pdf}
+\end{center}
+\caption{\label{Fig: shearing comparison result} Comparison of displacement response under simple shearing}
+\end{figure}
 
 \section{Conclusion}
 
@@ -172,7 +187,7 @@ For distorted 5-node element and 7-node element, when the external force is with
 %
 The prediction error of displacement response grows with the increase of external force. 
 %
-Although ESSI can deal with these types of special element, as suggested by \citet{SASSIUsrManual}, the integration order of these elements should be increased and very distorted elements should be avoided as much as possible. 
+Although ESSI can deal with these types of special element, as suggested by \citet{Ostadan2007b}, the integration order of these elements should be increased and very distorted elements should be avoided as much as possible.
 
 \bibliographystyle{agsm}
 \setlength\bibsep{0.3pt}

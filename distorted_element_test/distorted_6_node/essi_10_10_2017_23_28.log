@@ -1,0 +1,1647 @@
+                                                               
+                                                               
+  The Finite Element Interpreter                               
+                                                               
+  Real ESSI                                                  
+  Earthquake Soil Structure Interaction Simulator            
+                                                             
+  Sequential processing mode.                                
+                                                             
+Version Name   : Academic Version. Release date: Aug 2 2017 at 16:30:54. Tag: 45080f4803
+Version Branch : master
+Compile Date   : Aug  5 2017 at 17:10:45
+Compile User   : hexiang
+Compile Sysinfo: cml08 4.4.0-87-generic x86_64 GNU/Linux
+Runtime User   : Runtime Sysinfo: Time Now       : Oct 10 2017 at 23:28:19
+                                                               
+Static startup tips:                                           
+ * Remember: Every command ends with a semicolon ';'.          
+ * Type 'quit;' or 'exit;' to finish.                          
+ * Run 'essi -h' to see available command line options.        
+                                                               
+Including: "main.fei"
+
+
+Model name is being set to "vm"
+
+
+
+Starting new stage: 2shearing
+
+changing previous_stage_name from  to 2shearing
+Setting set_constitutive_integration_method = 2
+
+Starting sequential static multistep analysis
+====================================================================================================
+Creating analysis model........................................................................Pass!
+Checking constraint handler....................................................................Pass!
+Checking numberer..............................................................................Pass!
+Checking analysis algorithm....................................................................Pass!
+Checking system of equation handler............................................................Pass!
+Checking static integration handler............................................................Pass!
+
+ 
+ Writing Initial Conditions and   (0) - Outputting mesh.
+
+Static Analysis: [    1/100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.7096e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 6.5717e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 3.387e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.9693e-12
+	 	                  Absolute Norm deltaU: 2.6835e-18
+	 	                  Average  Norm deltaF: 1.6903e-12
+	 	                  Average  Norm deltaU: 6.5084e-19
+	 	                  Relative Norm deltaF: 8.7116e-16
+	 	                  Relative Norm deltaU: 1.9345e-15
+
+Static Analysis: [2    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.3472e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 8.1183e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.1841e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2386e-11
+	 	                  Absolute Norm deltaU: 2.9196e-18
+	 	                  Average  Norm deltaF: 3.004e-12
+	 	                  Average  Norm deltaU: 7.081e-19
+	 	                  Relative Norm deltaF: 1.5482e-15
+	 	                  Relative Norm deltaU: 2.1047e-15
+
+Static Analysis: [3    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.0511e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 7.4e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 3.8139e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.0849e-11
+	 	                  Absolute Norm deltaU: 2.667e-18
+	 	                  Average  Norm deltaF: 5.0567e-12
+	 	                  Average  Norm deltaU: 6.4683e-19
+	 	                  Relative Norm deltaF: 2.6062e-15
+	 	                  Relative Norm deltaU: 1.9226e-15
+
+Static Analysis: [4    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.3224e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 5.6327e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.903e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.1518e-12
+	 	                  Absolute Norm deltaU: 3.2634e-18
+	 	                  Average  Norm deltaF: 1.7346e-12
+	 	                  Average  Norm deltaU: 7.9148e-19
+	 	                  Relative Norm deltaF: 8.9397e-16
+	 	                  Relative Norm deltaU: 2.3525e-15
+
+Static Analysis: [5    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.8219e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 6.8441e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 3.5274e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1209e-11
+	 	                  Absolute Norm deltaU: 2.6164e-18
+	 	                  Average  Norm deltaF: 2.7187e-12
+	 	                  Average  Norm deltaU: 6.3456e-19
+	 	                  Relative Norm deltaF: 1.4012e-15
+	 	                  Relative Norm deltaU: 1.8861e-15
+
+Static Analysis: [6    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.3945e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 5.8075e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.9931e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1765e-11
+	 	                  Absolute Norm deltaU: 1.3537e-18
+	 	                  Average  Norm deltaF: 2.8534e-12
+	 	                  Average  Norm deltaU: 3.2831e-19
+	 	                  Relative Norm deltaF: 1.4706e-15
+	 	                  Relative Norm deltaU: 9.7583e-16
+
+Static Analysis: [7    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.5126e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 8.5194e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.3908e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.7735e-11
+	 	                  Absolute Norm deltaU: 3.8176e-18
+	 	                  Average  Norm deltaF: 4.3014e-12
+	 	                  Average  Norm deltaU: 9.259e-19
+	 	                  Relative Norm deltaF: 2.2169e-15
+	 	                  Relative Norm deltaU: 2.752e-15
+
+Static Analysis: [8    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.1361e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 7.6061e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 3.9201e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.0361e-11
+	 	                  Absolute Norm deltaU: 3.6893e-18
+	 	                  Average  Norm deltaF: 4.9382e-12
+	 	                  Average  Norm deltaU: 8.9479e-19
+	 	                  Relative Norm deltaF: 2.5451e-15
+	 	                  Relative Norm deltaU: 2.6596e-15
+
+Static Analysis: [9    /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.5899e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 8.7067e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.4874e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.209e-11
+	 	                  Absolute Norm deltaU: 2.8696e-18
+	 	                  Average  Norm deltaF: 2.9323e-12
+	 	                  Average  Norm deltaU: 6.9597e-19
+	 	                  Relative Norm deltaF: 1.5113e-15
+	 	                  Relative Norm deltaU: 2.0686e-15
+
+Static Analysis: [10   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.4588e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 8.3888e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.3235e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.7945e-11
+	 	                  Absolute Norm deltaU: 2.8361e-18
+	 	                  Average  Norm deltaF: 4.3524e-12
+	 	                  Average  Norm deltaU: 6.8786e-19
+	 	                  Relative Norm deltaF: 2.2432e-15
+	 	                  Relative Norm deltaU: 2.0445e-15
+
+Static Analysis: [11   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.0169e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.8917e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.5211e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.8721e-11
+	 	                  Absolute Norm deltaU: 1.6357e-18
+	 	                  Average  Norm deltaF: 4.5406e-12
+	 	                  Average  Norm deltaU: 3.9671e-19
+	 	                  Relative Norm deltaF: 2.3402e-15
+	 	                  Relative Norm deltaU: 1.1791e-15
+
+Static Analysis: [12   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.8533e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.1771e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.0667e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.758e-11
+	 	                  Absolute Norm deltaU: 2.1623e-18
+	 	                  Average  Norm deltaF: 6.6891e-12
+	 	                  Average  Norm deltaU: 5.2444e-19
+	 	                  Relative Norm deltaF: 3.4475e-15
+	 	                  Relative Norm deltaU: 1.5588e-15
+
+Static Analysis: [13   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.9926e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 7.2581e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 3.7408e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.385e-11
+	 	                  Absolute Norm deltaU: 4.0897e-18
+	 	                  Average  Norm deltaF: 5.7844e-12
+	 	                  Average  Norm deltaU: 9.9189e-19
+	 	                  Relative Norm deltaF: 2.9812e-15
+	 	                  Relative Norm deltaU: 2.9482e-15
+
+Static Analysis: [14   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.399e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 8.2438e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.2488e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.3106e-11
+	 	                  Absolute Norm deltaU: 4.181e-18
+	 	                  Average  Norm deltaF: 5.6041e-12
+	 	                  Average  Norm deltaU: 1.0141e-18
+	 	                  Relative Norm deltaF: 2.8883e-15
+	 	                  Relative Norm deltaU: 3.014e-15
+
+Static Analysis: [15   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.0635e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 7.4301e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 3.8294e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.2145e-11
+	 	                  Absolute Norm deltaU: 2.1392e-18
+	 	                  Average  Norm deltaF: 5.371e-12
+	 	                  Average  Norm deltaU: 5.1883e-19
+	 	                  Relative Norm deltaF: 2.7682e-15
+	 	                  Relative Norm deltaU: 1.5421e-15
+
+Static Analysis: [16   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.7204e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 9.0234e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.6505e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.4275e-11
+	 	                  Absolute Norm deltaU: 4.2231e-18
+	 	                  Average  Norm deltaF: 5.8876e-12
+	 	                  Average  Norm deltaU: 1.0243e-18
+	 	                  Relative Norm deltaF: 3.0344e-15
+	 	                  Relative Norm deltaU: 3.0444e-15
+
+Static Analysis: [17   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.4431e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 8.3508e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.3039e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.5582e-11
+	 	                  Absolute Norm deltaU: 2.4532e-18
+	 	                  Average  Norm deltaF: 8.63e-12
+	 	                  Average  Norm deltaU: 5.9499e-19
+	 	                  Relative Norm deltaF: 4.4478e-15
+	 	                  Relative Norm deltaU: 1.7685e-15
+
+Static Analysis: [18   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.1164e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 9.9837e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.1455e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.4279e-11
+	 	                  Absolute Norm deltaU: 2.3721e-18
+	 	                  Average  Norm deltaF: 8.3138e-12
+	 	                  Average  Norm deltaU: 5.7531e-19
+	 	                  Relative Norm deltaF: 4.2848e-15
+	 	                  Relative Norm deltaU: 1.71e-15
+
+Static Analysis: [19   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.6245e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.1216e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.7806e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.0423e-11
+	 	                  Absolute Norm deltaU: 3.959e-18
+	 	                  Average  Norm deltaF: 7.3786e-12
+	 	                  Average  Norm deltaU: 9.6019e-19
+	 	                  Relative Norm deltaF: 3.8029e-15
+	 	                  Relative Norm deltaU: 2.8539e-15
+
+Static Analysis: [20   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.1914e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.0166e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.2393e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.8169e-11
+	 	                  Absolute Norm deltaU: 3.6642e-18
+	 	                  Average  Norm deltaF: 6.8319e-12
+	 	                  Average  Norm deltaU: 8.8871e-19
+	 	                  Relative Norm deltaF: 3.5211e-15
+	 	                  Relative Norm deltaU: 2.6415e-15
+
+Static Analysis: [21   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.9493e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 9.5784e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.9366e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.4614e-11
+	 	                  Absolute Norm deltaU: 1.5636e-18
+	 	                  Average  Norm deltaF: 8.3952e-12
+	 	                  Average  Norm deltaU: 3.7923e-19
+	 	                  Relative Norm deltaF: 4.3268e-15
+	 	                  Relative Norm deltaU: 1.1272e-15
+
+Static Analysis: [22   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.881e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.1838e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.1012e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.8031e-11
+	 	                  Absolute Norm deltaU: 2.8998e-18
+	 	                  Average  Norm deltaF: 9.2238e-12
+	 	                  Average  Norm deltaU: 7.0331e-19
+	 	                  Relative Norm deltaF: 4.7538e-15
+	 	                  Relative Norm deltaU: 2.0904e-15
+
+Static Analysis: [23   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.4006e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.0673e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.5007e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.466e-11
+	 	                  Absolute Norm deltaU: 2.3341e-18
+	 	                  Average  Norm deltaF: 5.981e-12
+	 	                  Average  Norm deltaU: 5.6609e-19
+	 	                  Relative Norm deltaF: 3.0825e-15
+	 	                  Relative Norm deltaU: 1.6826e-15
+
+Static Analysis: [24   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.4068e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.3113e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.7585e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.2321e-11
+	 	                  Absolute Norm deltaU: 1.5677e-18
+	 	                  Average  Norm deltaF: 5.4137e-12
+	 	                  Average  Norm deltaU: 3.8024e-19
+	 	                  Relative Norm deltaF: 2.7901e-15
+	 	                  Relative Norm deltaU: 1.1302e-15
+
+Static Analysis: [25   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.6257e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.3644e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 7.0321e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.0828e-11
+	 	                  Absolute Norm deltaU: 5.3471e-18
+	 	                  Average  Norm deltaF: 1.2328e-11
+	 	                  Average  Norm deltaU: 1.2969e-18
+	 	                  Relative Norm deltaF: 6.3535e-15
+	 	                  Relative Norm deltaU: 3.8546e-15
+
+Static Analysis: [26   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.9602e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.203e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.2002e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.5667e-11
+	 	                  Absolute Norm deltaU: 1.6447e-18
+	 	                  Average  Norm deltaF: 8.6504e-12
+	 	                  Average  Norm deltaU: 3.9889e-19
+	 	                  Relative Norm deltaF: 4.4583e-15
+	 	                  Relative Norm deltaU: 1.1856e-15
+
+Static Analysis: [27   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.9165e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.435e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 7.3957e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.7249e-11
+	 	                  Absolute Norm deltaU: 2.8515e-18
+	 	                  Average  Norm deltaF: 1.146e-11
+	 	                  Average  Norm deltaU: 6.9159e-19
+	 	                  Relative Norm deltaF: 5.9061e-15
+	 	                  Relative Norm deltaU: 2.0556e-15
+
+Static Analysis: [28   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.6947e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.8663e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 9.6184e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.527e-11
+	 	                  Absolute Norm deltaU: 8.1608e-18
+	 	                  Average  Norm deltaF: 1.0979e-11
+	 	                  Average  Norm deltaU: 1.9793e-18
+	 	                  Relative Norm deltaF: 5.6587e-15
+	 	                  Relative Norm deltaU: 5.883e-15
+
+Static Analysis: [29   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.434e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.3179e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.7924e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.7951e-11
+	 	                  Absolute Norm deltaU: 2.7735e-18
+	 	                  Average  Norm deltaF: 9.2044e-12
+	 	                  Average  Norm deltaU: 6.7268e-19
+	 	                  Relative Norm deltaF: 4.7438e-15
+	 	                  Relative Norm deltaU: 1.9994e-15
+
+Static Analysis: [30   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.6196e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.1204e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.7746e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.0333e-11
+	 	                  Absolute Norm deltaU: 2.9667e-18
+	 	                  Average  Norm deltaF: 1.2208e-11
+	 	                  Average  Norm deltaU: 7.1954e-19
+	 	                  Relative Norm deltaF: 6.2917e-15
+	 	                  Relative Norm deltaU: 2.1387e-15
+
+Static Analysis: [31   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.4037e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.068e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.5046e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.6096e-11
+	 	                  Absolute Norm deltaU: 4.9072e-18
+	 	                  Average  Norm deltaF: 8.7546e-12
+	 	                  Average  Norm deltaU: 1.1902e-18
+	 	                  Relative Norm deltaF: 4.512e-15
+	 	                  Relative Norm deltaU: 3.5375e-15
+
+Static Analysis: [32   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.167e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.0106e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 5.2087e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.0815e-11
+	 	                  Absolute Norm deltaU: 4.5154e-18
+	 	                  Average  Norm deltaF: 9.8991e-12
+	 	                  Average  Norm deltaU: 1.0951e-18
+	 	                  Relative Norm deltaF: 5.1019e-15
+	 	                  Relative Norm deltaU: 3.2551e-15
+
+Static Analysis: [33   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.2302e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 7.8345e-12
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 4.0378e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 3.7053e-11
+	 	                  Absolute Norm deltaU: 1.9971e-18
+	 	                  Average  Norm deltaF: 8.9867e-12
+	 	                  Average  Norm deltaU: 4.8436e-19
+	 	                  Relative Norm deltaF: 4.6316e-15
+	 	                  Relative Norm deltaU: 1.4397e-15
+
+Static Analysis: [34   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.1939e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.7448e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 8.9924e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.2814e-11
+	 	                  Absolute Norm deltaU: 8.4047e-18
+	 	                  Average  Norm deltaF: 1.2809e-11
+	 	                  Average  Norm deltaU: 2.0384e-18
+	 	                  Relative Norm deltaF: 6.6017e-15
+	 	                  Relative Norm deltaU: 6.0588e-15
+
+Static Analysis: [35   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.1507e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.2492e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.4383e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.5897e-11
+	 	                  Absolute Norm deltaU: 1.8661e-18
+	 	                  Average  Norm deltaF: 1.5982e-11
+	 	                  Average  Norm deltaU: 4.526e-19
+	 	                  Relative Norm deltaF: 8.2371e-15
+	 	                  Relative Norm deltaU: 1.3453e-15
+
+Static Analysis: [36   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.1113e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.2397e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.3891e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.5394e-11
+	 	                  Absolute Norm deltaU: 6.3751e-18
+	 	                  Average  Norm deltaF: 1.586e-11
+	 	                  Average  Norm deltaU: 1.5462e-18
+	 	                  Relative Norm deltaF: 8.1743e-15
+	 	                  Relative Norm deltaU: 4.5957e-15
+
+Static Analysis: [37   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.2452e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.5147e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 7.8065e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.3187e-11
+	 	                  Absolute Norm deltaU: 3.1512e-18
+	 	                  Average  Norm deltaF: 1.0474e-11
+	 	                  Average  Norm deltaU: 7.6427e-19
+	 	                  Relative Norm deltaF: 5.3984e-15
+	 	                  Relative Norm deltaU: 2.2716e-15
+
+Static Analysis: [38   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.0085e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.6998e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 8.7606e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.3929e-11
+	 	                  Absolute Norm deltaU: 7.2361e-18
+	 	                  Average  Norm deltaF: 1.308e-11
+	 	                  Average  Norm deltaU: 1.755e-18
+	 	                  Relative Norm deltaF: 6.7411e-15
+	 	                  Relative Norm deltaU: 5.2164e-15
+
+Static Analysis: [39   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.8579e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.6633e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 8.5724e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.6415e-11
+	 	                  Absolute Norm deltaU: 7.8856e-18
+	 	                  Average  Norm deltaF: 1.3683e-11
+	 	                  Average  Norm deltaU: 1.9125e-18
+	 	                  Relative Norm deltaF: 7.0518e-15
+	 	                  Relative Norm deltaU: 5.6846e-15
+
+Static Analysis: [40   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.1069e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.4811e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 7.6337e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.7058e-11
+	 	                  Absolute Norm deltaU: 9.1525e-18
+	 	                  Average  Norm deltaF: 1.1413e-11
+	 	                  Average  Norm deltaU: 2.2198e-18
+	 	                  Relative Norm deltaF: 5.8823e-15
+	 	                  Relative Norm deltaU: 6.5979e-15
+
+Static Analysis: [41   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.2126e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.2642e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 6.5157e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.4037e-11
+	 	                  Absolute Norm deltaU: 5.9965e-18
+	 	                  Average  Norm deltaF: 1.5531e-11
+	 	                  Average  Norm deltaU: 1.4544e-18
+	 	                  Relative Norm deltaF: 8.0047e-15
+	 	                  Relative Norm deltaU: 4.3228e-15
+
+Static Analysis: [42   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.7822e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.3725e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.2228e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.5202e-11
+	 	                  Absolute Norm deltaU: 4.827e-18
+	 	                  Average  Norm deltaF: 1.5814e-11
+	 	                  Average  Norm deltaU: 1.1707e-18
+	 	                  Relative Norm deltaF: 8.1503e-15
+	 	                  Relative Norm deltaU: 3.4797e-15
+
+Static Analysis: [43   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.7459e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.6361e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 8.4323e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.3586e-11
+	 	                  Absolute Norm deltaU: 5.3047e-18
+	 	                  Average  Norm deltaF: 1.5422e-11
+	 	                  Average  Norm deltaU: 1.2866e-18
+	 	                  Relative Norm deltaF: 7.9482e-15
+	 	                  Relative Norm deltaU: 3.8241e-15
+
+Static Analysis: [44   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.0739e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.2008e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.1342e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.0434e-11
+	 	                  Absolute Norm deltaU: 4.3584e-18
+	 	                  Average  Norm deltaF: 1.7083e-11
+	 	                  Average  Norm deltaU: 1.0571e-18
+	 	                  Relative Norm deltaF: 8.8043e-15
+	 	                  Relative Norm deltaU: 3.1419e-15
+
+Static Analysis: [45   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.3119e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.5309e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 7.8899e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.4515e-11
+	 	                  Absolute Norm deltaU: 3.9564e-18
+	 	                  Average  Norm deltaF: 1.3222e-11
+	 	                  Average  Norm deltaU: 9.5956e-19
+	 	                  Relative Norm deltaF: 6.8144e-15
+	 	                  Relative Norm deltaU: 2.8521e-15
+
+Static Analysis: [46   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.6266e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.0923e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.0783e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.7794e-11
+	 	                  Absolute Norm deltaU: 7.0273e-18
+	 	                  Average  Norm deltaF: 1.4017e-11
+	 	                  Average  Norm deltaU: 1.7044e-18
+	 	                  Relative Norm deltaF: 7.2242e-15
+	 	                  Relative Norm deltaU: 5.0659e-15
+
+Static Analysis: [47   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.5351e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.0701e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.0669e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.7026e-11
+	 	                  Absolute Norm deltaU: 9.7472e-18
+	 	                  Average  Norm deltaF: 1.6256e-11
+	 	                  Average  Norm deltaU: 2.3641e-18
+	 	                  Relative Norm deltaF: 8.3782e-15
+	 	                  Relative Norm deltaU: 7.0266e-15
+
+Static Analysis: [48   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0129e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.4566e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.2661e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.4352e-11
+	 	                  Absolute Norm deltaU: 4.7089e-18
+	 	                  Average  Norm deltaF: 1.5608e-11
+	 	                  Average  Norm deltaU: 1.1421e-18
+	 	                  Relative Norm deltaF: 8.044e-15
+	 	                  Relative Norm deltaU: 3.3945e-15
+
+Static Analysis: [49   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.0786e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.2019e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.1348e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.3543e-11
+	 	                  Absolute Norm deltaU: 9.184e-18
+	 	                  Average  Norm deltaF: 1.7837e-11
+	 	                  Average  Norm deltaU: 2.2275e-18
+	 	                  Relative Norm deltaF: 9.1929e-15
+	 	                  Relative Norm deltaU: 6.6206e-15
+
+Static Analysis: [50   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.5091e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.8212e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 9.3864e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.6036e-11
+	 	                  Absolute Norm deltaU: 1.5933e-18
+	 	                  Average  Norm deltaF: 1.3591e-11
+	 	                  Average  Norm deltaU: 3.8644e-19
+	 	                  Relative Norm deltaF: 7.0045e-15
+	 	                  Relative Norm deltaU: 1.1486e-15
+
+Static Analysis: [51   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.156e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.7356e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 8.9449e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.2198e-11
+	 	                  Absolute Norm deltaU: 3.9427e-18
+	 	                  Average  Norm deltaF: 1.5085e-11
+	 	                  Average  Norm deltaU: 9.5624e-19
+	 	                  Relative Norm deltaF: 7.7748e-15
+	 	                  Relative Norm deltaU: 2.8422e-15
+
+Static Analysis: [52   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.8296e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.1415e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.1037e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.1178e-11
+	 	                  Absolute Norm deltaU: 8.8794e-18
+	 	                  Average  Norm deltaF: 1.9688e-11
+	 	                  Average  Norm deltaU: 2.1536e-18
+	 	                  Relative Norm deltaF: 1.0147e-14
+	 	                  Relative Norm deltaU: 6.401e-15
+
+Static Analysis: [53   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.5207e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.0666e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.0651e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.0302e-11
+	 	                  Absolute Norm deltaU: 3.281e-18
+	 	                  Average  Norm deltaF: 1.7051e-11
+	 	                  Average  Norm deltaU: 7.9577e-19
+	 	                  Relative Norm deltaF: 8.7877e-15
+	 	                  Relative Norm deltaU: 2.3652e-15
+
+Static Analysis: [54   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.7871e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.1312e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.0984e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.2996e-11
+	 	                  Absolute Norm deltaU: 4.8726e-18
+	 	                  Average  Norm deltaF: 1.0428e-11
+	 	                  Average  Norm deltaU: 1.1818e-18
+	 	                  Relative Norm deltaF: 5.3745e-15
+	 	                  Relative Norm deltaU: 3.5126e-15
+
+Static Analysis: [55   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.54e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.0713e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.0675e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.6774e-11
+	 	                  Absolute Norm deltaU: 8.34e-18
+	 	                  Average  Norm deltaF: 1.377e-11
+	 	                  Average  Norm deltaU: 2.0227e-18
+	 	                  Relative Norm deltaF: 7.0967e-15
+	 	                  Relative Norm deltaU: 6.0122e-15
+
+Static Analysis: [56   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.9783e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.4201e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.2473e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 4.4934e-11
+	 	                  Absolute Norm deltaU: 9.2704e-18
+	 	                  Average  Norm deltaF: 1.0898e-11
+	 	                  Average  Norm deltaU: 2.2484e-18
+	 	                  Relative Norm deltaF: 5.6168e-15
+	 	                  Relative Norm deltaU: 6.6829e-15
+
+Static Analysis: [57   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.4477e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.0489e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.056e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.008e-11
+	 	                  Absolute Norm deltaU: 7.7235e-18
+	 	                  Average  Norm deltaF: 1.6997e-11
+	 	                  Average  Norm deltaU: 1.8732e-18
+	 	                  Relative Norm deltaF: 8.76e-15
+	 	                  Relative Norm deltaU: 5.5677e-15
+
+Static Analysis: [58   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.3516e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.2681e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.1689e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.5883e-11
+	 	                  Absolute Norm deltaU: 4.5596e-18
+	 	                  Average  Norm deltaF: 1.8404e-11
+	 	                  Average  Norm deltaU: 1.1059e-18
+	 	                  Relative Norm deltaF: 9.4854e-15
+	 	                  Relative Norm deltaU: 3.2869e-15
+
+Static Analysis: [59   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1009e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.6701e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.3762e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.2437e-11
+	 	                  Absolute Norm deltaU: 1.1781e-17
+	 	                  Average  Norm deltaF: 1.9994e-11
+	 	                  Average  Norm deltaU: 2.8573e-18
+	 	                  Relative Norm deltaF: 1.0305e-14
+	 	                  Relative Norm deltaU: 8.4926e-15
+
+Static Analysis: [60   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.994e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.1814e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.1243e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.7897e-11
+	 	                  Absolute Norm deltaU: 4.553e-18
+	 	                  Average  Norm deltaF: 2.1318e-11
+	 	                  Average  Norm deltaU: 1.1043e-18
+	 	                  Relative Norm deltaF: 1.0987e-14
+	 	                  Relative Norm deltaU: 3.2822e-15
+
+Static Analysis: [61   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.3594e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.27e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.1699e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.5179e-11
+	 	                  Absolute Norm deltaU: 6.2425e-18
+	 	                  Average  Norm deltaF: 1.5808e-11
+	 	                  Average  Norm deltaU: 1.514e-18
+	 	                  Relative Norm deltaF: 8.1474e-15
+	 	                  Relative Norm deltaU: 4.5001e-15
+
+Static Analysis: [62   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.9204e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.6784e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 8.6505e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.9665e-11
+	 	                  Absolute Norm deltaU: 5.4758e-18
+	 	                  Average  Norm deltaF: 1.9322e-11
+	 	                  Average  Norm deltaU: 1.3281e-18
+	 	                  Relative Norm deltaF: 9.9581e-15
+	 	                  Relative Norm deltaU: 3.9474e-15
+
+Static Analysis: [63   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0088e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.4466e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.261e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.1941e-11
+	 	                  Absolute Norm deltaU: 8.7609e-18
+	 	                  Average  Norm deltaF: 1.7448e-11
+	 	                  Average  Norm deltaU: 2.1248e-18
+	 	                  Relative Norm deltaF: 8.9927e-15
+	 	                  Relative Norm deltaU: 6.3156e-15
+
+Static Analysis: [64   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.6517e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.0983e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.0815e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.8204e-11
+	 	                  Absolute Norm deltaU: 4.886e-18
+	 	                  Average  Norm deltaF: 1.6542e-11
+	 	                  Average  Norm deltaU: 1.185e-18
+	 	                  Relative Norm deltaF: 8.5255e-15
+	 	                  Relative Norm deltaU: 3.5222e-15
+
+Static Analysis: [65   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.8301e-11
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 1.8991e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 9.7876e-15
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 6.3893e-11
+	 	                  Absolute Norm deltaU: 7.157e-18
+	 	                  Average  Norm deltaF: 1.5496e-11
+	 	                  Average  Norm deltaU: 1.7358e-18
+	 	                  Relative Norm deltaF: 7.9866e-15
+	 	                  Relative Norm deltaU: 5.1593e-15
+
+Static Analysis: [66   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2003e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.9111e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5004e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1289e-10
+	 	                  Absolute Norm deltaU: 5.0162e-18
+	 	                  Average  Norm deltaF: 2.7379e-11
+	 	                  Average  Norm deltaU: 1.2166e-18
+	 	                  Relative Norm deltaF: 1.4111e-14
+	 	                  Relative Norm deltaU: 3.6161e-15
+
+Static Analysis: [67   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.3316e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.2296e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.6645e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0401e-10
+	 	                  Absolute Norm deltaU: 1.5302e-17
+	 	                  Average  Norm deltaF: 2.5227e-11
+	 	                  Average  Norm deltaU: 3.7112e-18
+	 	                  Relative Norm deltaF: 1.3002e-14
+	 	                  Relative Norm deltaU: 1.1031e-14
+
+Static Analysis: [68   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2316e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.9871e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5395e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.591e-11
+	 	                  Absolute Norm deltaU: 7.7727e-18
+	 	                  Average  Norm deltaF: 2.0836e-11
+	 	                  Average  Norm deltaU: 1.8852e-18
+	 	                  Relative Norm deltaF: 1.0739e-14
+	 	                  Relative Norm deltaU: 5.6032e-15
+
+Static Analysis: [69   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2201e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.9593e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5252e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0656e-10
+	 	                  Absolute Norm deltaU: 5.3877e-18
+	 	                  Average  Norm deltaF: 2.5845e-11
+	 	                  Average  Norm deltaU: 1.3067e-18
+	 	                  Relative Norm deltaF: 1.332e-14
+	 	                  Relative Norm deltaU: 3.8839e-15
+
+Static Analysis: [70   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0327e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.5047e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.2909e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.693e-11
+	 	                  Absolute Norm deltaU: 1.6187e-17
+	 	                  Average  Norm deltaF: 1.8658e-11
+	 	                  Average  Norm deltaU: 3.926e-18
+	 	                  Relative Norm deltaF: 9.6163e-15
+	 	                  Relative Norm deltaU: 1.1669e-14
+
+Static Analysis: [71   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0653e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.5838e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.3317e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1248e-10
+	 	                  Absolute Norm deltaU: 1.2674e-17
+	 	                  Average  Norm deltaF: 2.728e-11
+	 	                  Average  Norm deltaU: 3.0739e-18
+	 	                  Relative Norm deltaF: 1.406e-14
+	 	                  Relative Norm deltaU: 9.1366e-15
+
+Static Analysis: [72   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4845e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.6003e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.8556e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0612e-10
+	 	                  Absolute Norm deltaU: 1.7894e-17
+	 	                  Average  Norm deltaF: 2.5739e-11
+	 	                  Average  Norm deltaU: 4.34e-18
+	 	                  Relative Norm deltaF: 1.3265e-14
+	 	                  Relative Norm deltaU: 1.29e-14
+
+Static Analysis: [73   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0891e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.6414e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.3614e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1598e-10
+	 	                  Absolute Norm deltaU: 1.5661e-17
+	 	                  Average  Norm deltaF: 2.813e-11
+	 	                  Average  Norm deltaU: 3.7984e-18
+	 	                  Relative Norm deltaF: 1.4498e-14
+	 	                  Relative Norm deltaU: 1.129e-14
+
+Static Analysis: [74   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2074e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.9285e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5093e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0164e-10
+	 	                  Absolute Norm deltaU: 4.3152e-18
+	 	                  Average  Norm deltaF: 2.4651e-11
+	 	                  Average  Norm deltaU: 1.0466e-18
+	 	                  Relative Norm deltaF: 1.2705e-14
+	 	                  Relative Norm deltaU: 3.1108e-15
+
+Static Analysis: [75   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.3729e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.3298e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.7161e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.84e-11
+	 	                  Absolute Norm deltaU: 1.978e-17
+	 	                  Average  Norm deltaF: 2.3865e-11
+	 	                  Average  Norm deltaU: 4.7974e-18
+	 	                  Relative Norm deltaF: 1.23e-14
+	 	                  Relative Norm deltaU: 1.4259e-14
+
+Static Analysis: [76   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1392e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.763e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.424e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 9.7732e-11
+	 	                  Absolute Norm deltaU: 1.0525e-17
+	 	                  Average  Norm deltaF: 2.3704e-11
+	 	                  Average  Norm deltaU: 2.5528e-18
+	 	                  Relative Norm deltaF: 1.2217e-14
+	 	                  Relative Norm deltaU: 7.5875e-15
+
+Static Analysis: [77   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.5873e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.8498e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.9842e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0915e-10
+	 	                  Absolute Norm deltaU: 1.3391e-17
+	 	                  Average  Norm deltaF: 2.6473e-11
+	 	                  Average  Norm deltaU: 3.2479e-18
+	 	                  Relative Norm deltaF: 1.3644e-14
+	 	                  Relative Norm deltaU: 9.6537e-15
+
+Static Analysis: [78   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.7373e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.2137e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.1717e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.5963e-11
+	 	                  Absolute Norm deltaU: 1.4274e-17
+	 	                  Average  Norm deltaF: 1.8424e-11
+	 	                  Average  Norm deltaU: 3.4619e-18
+	 	                  Relative Norm deltaF: 9.4953e-15
+	 	                  Relative Norm deltaU: 1.029e-14
+
+Static Analysis: [79   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.35e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.2742e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.6875e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2183e-10
+	 	                  Absolute Norm deltaU: 1.0128e-17
+	 	                  Average  Norm deltaF: 2.9549e-11
+	 	                  Average  Norm deltaU: 2.4563e-18
+	 	                  Relative Norm deltaF: 1.5229e-14
+	 	                  Relative Norm deltaU: 7.3009e-15
+
+Static Analysis: [80   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2377e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.0018e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5471e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1817e-10
+	 	                  Absolute Norm deltaU: 1.2196e-17
+	 	                  Average  Norm deltaF: 2.8662e-11
+	 	                  Average  Norm deltaU: 2.9581e-18
+	 	                  Relative Norm deltaF: 1.4772e-14
+	 	                  Relative Norm deltaU: 8.7922e-15
+
+Static Analysis: [81   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4826e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.5957e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.8532e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.3221e-10
+	 	                  Absolute Norm deltaU: 1.1461e-17
+	 	                  Average  Norm deltaF: 3.2066e-11
+	 	                  Average  Norm deltaU: 2.7797e-18
+	 	                  Relative Norm deltaF: 1.6526e-14
+	 	                  Relative Norm deltaU: 8.2622e-15
+
+Static Analysis: [82   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1659e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.8277e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.4574e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 5.9386e-11
+	 	                  Absolute Norm deltaU: 8.3342e-18
+	 	                  Average  Norm deltaF: 1.4403e-11
+	 	                  Average  Norm deltaU: 2.0213e-18
+	 	                  Relative Norm deltaF: 7.4233e-15
+	 	                  Relative Norm deltaU: 6.008e-15
+
+Static Analysis: [83   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.107e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.6848e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.3837e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 8.7307e-11
+	 	                  Absolute Norm deltaU: 7.8976e-18
+	 	                  Average  Norm deltaF: 2.1175e-11
+	 	                  Average  Norm deltaU: 1.9155e-18
+	 	                  Relative Norm deltaF: 1.0913e-14
+	 	                  Relative Norm deltaU: 5.6933e-15
+
+Static Analysis: [84   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.175e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 5.2751e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.7187e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4842e-10
+	 	                  Absolute Norm deltaU: 1.6656e-17
+	 	                  Average  Norm deltaF: 3.5997e-11
+	 	                  Average  Norm deltaU: 4.0397e-18
+	 	                  Relative Norm deltaF: 1.8552e-14
+	 	                  Relative Norm deltaU: 1.2007e-14
+
+Static Analysis: [85   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.8854e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.5729e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.3568e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2809e-10
+	 	                  Absolute Norm deltaU: 2.22e-17
+	 	                  Average  Norm deltaF: 3.1066e-11
+	 	                  Average  Norm deltaU: 5.3844e-18
+	 	                  Relative Norm deltaF: 1.6011e-14
+	 	                  Relative Norm deltaU: 1.6004e-14
+
+Static Analysis: [86   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.674e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.0601e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.0925e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 2.1157e-10
+	 	                  Absolute Norm deltaU: 2.0465e-17
+	 	                  Average  Norm deltaF: 5.1314e-11
+	 	                  Average  Norm deltaU: 4.9634e-18
+	 	                  Relative Norm deltaF: 2.6447e-14
+	 	                  Relative Norm deltaU: 1.4753e-14
+
+Static Analysis: [87   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1568e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.8057e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.446e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4439e-10
+	 	                  Absolute Norm deltaU: 6.4271e-18
+	 	                  Average  Norm deltaF: 3.502e-11
+	 	                  Average  Norm deltaU: 1.5588e-18
+	 	                  Relative Norm deltaF: 1.8049e-14
+	 	                  Relative Norm deltaU: 4.6332e-15
+
+Static Analysis: [88   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4416e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.4965e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.8021e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.489e-10
+	 	                  Absolute Norm deltaU: 1.5379e-17
+	 	                  Average  Norm deltaF: 3.6113e-11
+	 	                  Average  Norm deltaU: 3.73e-18
+	 	                  Relative Norm deltaF: 1.8612e-14
+	 	                  Relative Norm deltaU: 1.1087e-14
+
+Static Analysis: [89   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.6148e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.9165e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.0185e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0422e-10
+	 	                  Absolute Norm deltaU: 1.0522e-17
+	 	                  Average  Norm deltaF: 2.5278e-11
+	 	                  Average  Norm deltaU: 2.5521e-18
+	 	                  Relative Norm deltaF: 1.3028e-14
+	 	                  Relative Norm deltaU: 7.5854e-15
+
+Static Analysis: [90   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.7359e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.2101e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.1698e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.3864e-10
+	 	                  Absolute Norm deltaU: 2.3758e-17
+	 	                  Average  Norm deltaF: 3.3624e-11
+	 	                  Average  Norm deltaU: 5.7622e-18
+	 	                  Relative Norm deltaF: 1.7329e-14
+	 	                  Relative Norm deltaU: 1.7127e-14
+
+Static Analysis: [91   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2427e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.014e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5534e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 7.4008e-11
+	 	                  Absolute Norm deltaU: 5.8403e-18
+	 	                  Average  Norm deltaF: 1.795e-11
+	 	                  Average  Norm deltaU: 1.4165e-18
+	 	                  Relative Norm deltaF: 9.251e-15
+	 	                  Relative Norm deltaU: 4.2102e-15
+
+Static Analysis: [92   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4293e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.4666e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.7866e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1652e-10
+	 	                  Absolute Norm deltaU: 1.4452e-17
+	 	                  Average  Norm deltaF: 2.826e-11
+	 	                  Average  Norm deltaU: 3.5052e-18
+	 	                  Relative Norm deltaF: 1.4565e-14
+	 	                  Relative Norm deltaU: 1.0418e-14
+
+Static Analysis: [93   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2242e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.9692e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5303e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4045e-10
+	 	                  Absolute Norm deltaU: 1.2429e-17
+	 	                  Average  Norm deltaF: 3.4064e-11
+	 	                  Average  Norm deltaU: 3.0145e-18
+	 	                  Relative Norm deltaF: 1.7556e-14
+	 	                  Relative Norm deltaU: 8.96e-15
+
+Static Analysis: [94   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.6328e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.9601e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.041e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0437e-10
+	 	                  Absolute Norm deltaU: 1.2609e-17
+	 	                  Average  Norm deltaF: 2.5313e-11
+	 	                  Average  Norm deltaU: 3.058e-18
+	 	                  Relative Norm deltaF: 1.3046e-14
+	 	                  Relative Norm deltaU: 9.0894e-15
+
+Static Analysis: [95   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2475e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.0256e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.5594e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.4671e-10
+	 	                  Absolute Norm deltaU: 6.7273e-18
+	 	                  Average  Norm deltaF: 3.5582e-11
+	 	                  Average  Norm deltaU: 1.6316e-18
+	 	                  Relative Norm deltaF: 1.8339e-14
+	 	                  Relative Norm deltaU: 4.8496e-15
+
+Static Analysis: [96   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.8148e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.4016e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.2685e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.3263e-10
+	 	                  Absolute Norm deltaU: 7.6026e-18
+	 	                  Average  Norm deltaF: 3.2169e-11
+	 	                  Average  Norm deltaU: 1.8439e-18
+	 	                  Relative Norm deltaF: 1.6579e-14
+	 	                  Relative Norm deltaU: 5.4806e-15
+
+Static Analysis: [97   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.5959e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.8707e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.9949e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.1886e-10
+	 	                  Absolute Norm deltaU: 5.3869e-18
+	 	                  Average  Norm deltaF: 2.8829e-11
+	 	                  Average  Norm deltaU: 1.3065e-18
+	 	                  Relative Norm deltaF: 1.4858e-14
+	 	                  Relative Norm deltaU: 3.8833e-15
+
+Static Analysis: [98   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.6088e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 3.9018e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.011e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2346e-10
+	 	                  Absolute Norm deltaU: 4.8663e-18
+	 	                  Average  Norm deltaF: 2.9944e-11
+	 	                  Average  Norm deltaU: 1.1802e-18
+	 	                  Relative Norm deltaF: 1.5433e-14
+	 	                  Relative Norm deltaU: 3.508e-15
+
+Static Analysis: [99   /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0705e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 2.5963e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 1.3381e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.0485e-10
+	 	                  Absolute Norm deltaU: 5.6869e-18
+	 	                  Average  Norm deltaF: 2.5431e-11
+	 	                  Average  Norm deltaU: 1.3793e-18
+	 	                  Relative Norm deltaF: 1.3107e-14
+	 	                  Relative Norm deltaU: 4.0996e-15
+
+Static Analysis: [100  /100  ] 
+	 [iteration 1    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.8633e-10
+	 	                  Absolute Norm deltaU: 0.0013872
+	 	                  Average  Norm deltaF: 4.5191e-11
+	 	                  Average  Norm deltaU: 0.00033644
+	 	                  Relative Norm deltaF: 2.3291e-14
+	 	                  Relative Norm deltaU: 1
+	 [iteration 2    /50   ] Convergence Test: Absolute Norm Displacement Increment::(tol: 1e-06)
+	 	                  Absolute Norm deltaF: 1.2488e-10
+	 	                  Absolute Norm deltaU: 7.2495e-18
+	 	                  Average  Norm deltaF: 3.0288e-11
+	 	                  Average  Norm deltaU: 1.7583e-18
+	 	                  Relative Norm deltaF: 1.561e-14
+	 	                  Relative Norm deltaU: 5.226e-15
+
+> Analysis End -------------------------------------------------------------------------------
+How polite! Bye, have a nice day!
